@@ -3,11 +3,10 @@ package com.driver;
 public class Pizza {
 
     private int price;
-    private Boolean isVeg;
     private String bill;
-    private int chessPrice;
-    private int toppingsPrice;
-    private int tateAwayPrice;
+    private final int chessPrice;
+    private final int toppingsPrice;
+    private final int tateAwayPrice;
 
     boolean isCheeseAdded;
     boolean isToppingsAdded;
@@ -16,7 +15,6 @@ public class Pizza {
 
 
     public Pizza(Boolean isVeg){
-        this.isVeg = isVeg;
         // your code goes here
         this.chessPrice = 80;
         this.tateAwayPrice = 20;
